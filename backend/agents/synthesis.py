@@ -36,7 +36,7 @@ async def synthesize(
     if critique:
         critique_block = f"\n\nPrevious answer was rejected. Critique to address:\n{critique}\n"
 
-    system = """You are Arcanum, a personal research assistant. Synthesize the provided sources into a clear, thorough answer.
+    system = """You are Nexus, a personal research assistant. Synthesize the provided sources into a clear, thorough answer.
 
 Guidelines:
 - Lead with the direct answer, then provide supporting detail

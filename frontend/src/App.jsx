@@ -115,9 +115,9 @@ function EmptyState({ onSubmit }) {
       <div className="w-full max-w-xl">
         <div className="text-center mb-8">
           <div className="w-14 h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
-            <span className="text-accent text-xl font-semibold">A</span>
+            <span className="text-accent text-xl font-semibold">N</span>
           </div>
-          <h2 className="text-stone-300 font-semibold text-lg mb-1">Arcanum</h2>
+          <h2 className="text-stone-300 font-semibold text-lg mb-1">Nexus</h2>
           <p className="text-sm text-stone-600">Research anything across the web and your personal notes.</p>
         </div>
         <QueryInput onSubmit={onSubmit} autoFocus />

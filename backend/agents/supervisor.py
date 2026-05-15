@@ -44,7 +44,7 @@ PLAN_TOOL = {
 }
 
 async def plan(query: str, has_vault: bool, client: anthropic.AsyncAnthropic) -> ResearchPlan:
-    system = """You are a research planning agent for Arcanum, a personal knowledge assistant.
+    system = """You are a research planning agent for Nexus, a personal knowledge assistant.
 Given a user query, create an optimal search strategy.
 
 Generate varied search queries that approach the topic from different angles to maximize coverage.

@@ -36,9 +36,9 @@ export default function Sidebar({ activeId, onSelect, onNew, onDeleted }) {
       <div className="p-4 border-b border-surface-3">
         <div className="flex items-center gap-2.5 mb-5">
           <div className="w-5 h-5 rounded bg-accent/20 border border-accent/30 flex items-center justify-center">
-            <span className="text-accent text-xs font-semibold">A</span>
+            <span className="text-accent text-xs font-semibold">N</span>
           </div>
-          <span className="font-semibold text-sm tracking-widest text-stone-300 uppercase">Arcanum</span>
+          <span className="font-semibold text-sm tracking-widest text-stone-300 uppercase">Nexus</span>
         </div>
         <button
           onClick={onNew}

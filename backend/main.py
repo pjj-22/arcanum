@@ -220,13 +220,13 @@ async def save_to_vault(req: SaveNoteRequest):
     enrichment = await _enrich_note(title, req.answer, vault_titles, client)
 
     safe_filename = "".join(c if c.isalnum() or c in " -_" else "" for c in title).strip()[:80]
-    filepath = os.path.join(vault_path, "Arcanum", f"{safe_filename}.md")
+    filepath = os.path.join(vault_path, "Nexus", f"{safe_filename}.md")
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
     from datetime import datetime
     date_str = datetime.now().strftime("%Y-%m-%d")
 
-    tags = ["arcanum"] + enrichment.get("tags", [])
+    tags = ["nexus"] + enrichment.get("tags", [])
     tag_str = ", ".join(tags)
 
     web_sources = [s for s in req.sources if "url" in s]
@@ -260,7 +260,7 @@ async def save_to_vault(req: SaveNoteRequest):
         f.write(content)
 
     return {
-        "path": os.path.join("Arcanum", f"{safe_filename}.md"),
+        "path": os.path.join("Nexus", f"{safe_filename}.md"),
         "title": title,
         "tags": tags,
         "related": related_all
