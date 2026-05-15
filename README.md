@@ -1,4 +1,4 @@
-# Arcanum
+# Nexus
 
 Personal research tool I built for myself. You ask a question, it searches the web and your Obsidian notes at the same time, and gives you one synthesized answer with sources.
 
