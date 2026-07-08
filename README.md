@@ -4,6 +4,8 @@ Personal research tool I built for myself. You ask a question, it searches the w
 
 The Obsidian part is what makes it worth using over just Googling something. As you save research and take notes, future queries pull from your own knowledge base alongside the web. It compounds.
 
+![Nexus](demos/image.png)
+
 ## Architecture
 
 I built this around the same multi-agent pattern showing up in enterprise AI tools — supervisor routes the request, specialized agents handle retrieval, a judge reviews the answer before it ships.
